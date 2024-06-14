@@ -1,2 +1,18 @@
 # Creditcard-fraud-detection
-ff
+In this project, we aim to implement anomaly detection to identify fraudulent credit card transactions using both traditional machine learning techniques and automated machine learning (AutoML) with PyCaret. The dataset at hand contains transactions made by credit cards in September 2013 by European cardholders. It encapsulates transactions that occurred over two days, comprising 492 frauds out of 284,807 transactions. With a highly imbalanced distribution, the positive class (frauds) constitutes a mere 0.172% of all transactions.
+
+The dataset consists solely of numerical input variables, a result of a Principal Component Analysis (PCA) transformation, due to confidentiality concerns. Consequently, the original features and further background information about the data cannot be provided. Features V1 through V28 represent the principal components derived from PCA, while the 'Time' and 'Amount' features remain untransformed. The 'Time' feature denotes the seconds elapsed between each transaction and the first transaction in the dataset. On the other hand, the 'Amount' feature signifies the transaction amount, which could be useful for example-dependent cost-sensitive learning. Lastly, the 'Class' feature serves as the response variable, with a value of 1 indicating fraud and 0 otherwise.
+
+Given the significant class imbalance ratio, it's recommended to assess the accuracy using the Area Under the Precision-Recall Curve (AUPRC). Traditional confusion matrix accuracy is not meaningful for unbalanced classification tasks.
+
+To commence the project, we'll first load the dataset and perform exploratory data analysis (EDA) to gain insights into its structure and characteristics. Then, we'll develop machine learning models for fraud detection using conventional techniques. Finally, we'll compare the performance of these models with those produced by the AutoML approach implemented using PyCaret.
+
+Let's start by loading the dataset and delving into the EDA.
+
+In this project, we'll be implementing anomaly detection to identify fraudulent credit card transactions using both traditional machine learning techniques and automated machine learning (AutoML) with PyCaret. The dataset contains transactions made by credit cards in September 2013 by European cardholders. It encompasses transactions that occurred over two days, comprising 492 frauds out of 284,807 transactions. With a highly imbalanced distribution, the positive class (frauds) constitutes a mere 0.172% of all transactions.
+
+The dataset solely comprises numerical input variables, a result of a Principal Component Analysis (PCA) transformation, due to confidentiality concerns. Consequently, the original features and further background information about the data cannot be provided. Features V1 through V28 represent the principal components derived from PCA, while the 'Time' and 'Amount' features remain untransformed. The 'Time' feature denotes the seconds elapsed between each transaction and the first transaction in the dataset. On the other hand, the 'Amount' feature signifies the transaction amount, which could be useful for example-dependent cost-sensitive learning. Lastly, the 'Class' feature serves as the response variable, with a value of 1 indicating fraud and 0 otherwise.
+
+Given the significant class imbalance ratio, it's recommended to assess the accuracy using the Area Under the Precision-Recall Curve (AUPRC). Traditional confusion matrix accuracy is not meaningful for unbalanced classification tasks.
+
+To commence the project, we'll first load the dataset and perform exploratory data analysis (EDA) to gain insights into its structure and characteristics. Then, we'll develop machine learning models for fraud detection using conventional techniques. Finally, we'll compare the performance of these models with those produced by the AutoML approach implemented using PyCaret.
